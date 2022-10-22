@@ -18,4 +18,5 @@ int main ( void ) {
     printComma();
     printWord( "World!" );
     printNewLine();
+    return 0;
 }
