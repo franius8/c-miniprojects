@@ -55,7 +55,7 @@ void printRanges( void )  {
   printf( "uint64_t  %20d  %20llu\n"   , 0         , ULLONG_MAX );
   printf( "\n\n" );
   printf( "Ranges for real number data types in C\n\n" );
-  printf( "flaot        %14.7g  %14.7g\n"   , FLT_MIN  , FLT_MAX  );
+  printf( "float        %14.7g  %14.7g\n"   , FLT_MIN  , FLT_MAX  );
   printf( "double       %14.7g  %14.7g\n"   , DBL_MIN  , DBL_MAX  );
   printf( "long double  %14.7Lg  %14.7Lg\n" , LDBL_MIN , LDBL_MAX );
   printf( "\n\n" );
