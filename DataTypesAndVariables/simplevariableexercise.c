@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int main() {
+int main( void ) {
   bool isItSunny = false;
   printf("Is it sunny today? %s\n", isItSunny ? "Yes." : "No." );
   int number = 42;
@@ -12,4 +12,5 @@ int main() {
   printf("The current temperature is %g.\n", temperature);
   char letterB = 'B';
   printf("The second letter of the alphabet is %c.\n", letterB);
+  return 0;
 };
