@@ -116,7 +116,7 @@ int collectPlayAgain ( void ) {
   printf("Play again? (1 - yes, 0 - no): ");
   scanf("%d", &num);
   if (num == 0 || num == 1) {
-    return num;   
+    return num;
   }
   printf("Invalid choice\n"); 
   }
