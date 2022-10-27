@@ -125,11 +125,6 @@ int collectPlayAgain ( void ) {
 int determinePrintCharacter( char board[10], int i, int column) {
   char resultChar;
   char field = board[column + (i * 3)];
-  if (field == '-') {
-    resultChar = column + (i * 3) + 48;
-  } 
-  else {
-    resultChar = field;
-  }
+  resultChar = (field == '-') ? column + (i * 3) + 48 : field;
   return resultChar;
 }
