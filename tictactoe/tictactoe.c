@@ -6,13 +6,20 @@ int isGameWon ( char board[10], char marker );
 void printBoard ( char gameBoard[10] );
 void printRow ( int i, char board[10] );
 void printDivider ( void );
-int collectNextMove ( );
+int collectNextMove ( void );
+int collectPlayAgain ( void );
 int determinePrintCharacter( char board[10], int i, int column);
 
 
 int main ( void ) {
   printWelcomeMessage();
-  playGame();
+  while (1) {
+    playGame();
+    if (collectPlayAgain() == 0) {
+      printf("Have a nice day!\n");
+      break;
+    }
+  }
   return 0;
 };
 
@@ -96,11 +103,23 @@ void printDivider ( void ) {
   printf("-------------\n");
 }
 
-int collectNextMove () {
+int collectNextMove ( void ) {
   int num;
-    printf("Select the field where you want to place your marker: ");
-    scanf("%d", &num);
-    return num;
+  printf("Select the field where you want to place your marker: ");
+  scanf("%d", &num);
+  return num;
+}
+
+int collectPlayAgain ( void ) {
+  int num;
+  while (1) {
+  printf("Play again? (1 - yes, 0 - no): ");
+  scanf("%d", &num);
+  if (num == 0 || num == 1) {
+    return num;   
+  }
+  printf("Invalid choice\n"); 
+  }
 }
 
 int determinePrintCharacter( char board[10], int i, int column) {
