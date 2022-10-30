@@ -1,18 +1,19 @@
 #include <iostream>
+using namespace std;
 
 void printComma ( void ) {
-    std::cout << ", ";
+    cout << ", ";
 }
 
-void printWord ( std::string word ) {
-    std::cout << word;
+void printWord ( string word ) {
+    cout << word;
 }
 
 void printNewLine() {
-    std::cout << "\n";
+    cout << "\n";
 }
 
-void printGreeting( std::string greeting, std::string name) {
+void printGreeting( string greeting, string name) {
     printWord( greeting );
     printComma();
     printWord( name );
