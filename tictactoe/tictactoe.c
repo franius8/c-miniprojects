@@ -31,7 +31,7 @@ void printWelcomeMessage ( void ) {
 }
 
 void playGame ( void ) {
-  char board[10] = {'-', '-', '-', '-', '-', '-', '-', '-', '-', '-'};
+  char board[10] = {'0', '-', '-', '-', '-', '-', '-', '-', '-', '-'};
   int choice = 0;
   int round = 0;
   char currentPlayerMarker = 'x';
